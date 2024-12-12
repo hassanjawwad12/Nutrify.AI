@@ -1,0 +1,206 @@
+.dash-tail-calendar {
+  .fc-toolbar-chunk button {
+    @apply h-9;
+
+    &.fc-prev-button {
+      @apply text-default-600;
+
+    }
+
+    &.fc-next-button {
+      @apply text-default-600;
+
+    }
+  }
+
+  .fc-button {
+    @apply h-9;
+  }
+
+  .fc .fc-button-primary {
+    @apply bg-transparent hover:bg-primary border border-default-200 text-default-700 capitalize;
+  }
+
+    .fc .fc-button-primary.fc-button-active {
+      @apply border-none;
+    }
+
+  .fc .fc-button-primary:not(:disabled):active,
+  .fc .fc-button-primary:not(:disabled).fc-button-active,
+  .fc .fc-button-primary:hover {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  .fc .fc-button-primary:disabled {
+    @apply bg-transparent border border-default-200 cursor-not-allowed hover:text-default-800;
+  }
+
+    .fc-today-button {
+      @apply hover:text-primary-foreground;
+  }
+
+  .fc .fc-button-primary:focus {
+    box-shadow: none !important;
+  }
+
+  .fc-theme-standard .fc-scrollgrid {
+    @apply border-default-100 dark:border-default-200;
+  }
+
+  .fc-theme-standard td,
+  .fc-theme-standard th {
+    @apply border-default-100 dark:border-default-200;
+  }
+
+  .fc-col-header-cell .fc-scrollgrid-sync-inner {
+    @apply bg-default-50 text-xs text-default-600 font-normal py-3;
+  }
+
+  .fc-daygrid-day-top {
+    @apply text-sm px-3 py-2 text-default-900 font-normal;
+  }
+
+  .fc-h-event .fc-event-main-frame {
+    @apply flex justify-center items-center text-center w-max mx-auto;
+    }
+
+    .fc-event-time {
+    @apply text-sm font-normal flex-none text-primary-foreground;
+  }
+
+                 .fc-timegrid-event .fc-event-main {
+      @apply p-0 flex justify-center items-center gap-1;
+  }
+
+  .fc-event-title {
+    @apply text-sm font-light;
+  }
+
+    .fc-timegrid-col-events .fc-event-title {
+      @apply pt-4;
+    }
+
+  .fc .fc-toolbar-title {
+    @apply text-lg font-normal text-default-600;
+  }
+
+    .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+      @apply p-1;
+    }
+
+    .fc-theme-standard .fc-list {
+      @apply border border-default-200;
+    }
+
+  // event css
+  .fc-daygrid-event-dot {
+    @apply hidden;
+  }
+
+    .fc .fc-list-sticky .fc-list-day>* {
+      @apply bg-default-50;
+    }
+                                 .fc-timegrid-col-events .fc-event-title {
+                                   @apply pt-0;
+                                 }
+                
+                                 .fc-timegrid-event-harness>.fc-timegrid-event {
+                                   @apply static;
+                                 }
+  @media (max-width: 981px) {
+
+    .fc-button-group,
+    .fc .fc-toolbar {
+      display: block !important;
+    }
+
+    .fc .fc-toolbar {
+      @apply space-y-4;
+    }
+
+    .fc-toolbar-chunk {
+      @apply space-y-4;
+    }
+
+    .fc .fc-button {
+      padding: 0.4em 0.65em !important;
+    }
+  }
+
+  .fc .fc-timegrid-axis-cushion,
+  .fc .fc-timegrid-slot-label-cushion {
+    @apply dark:text-default-300;
+  }
+
+  .fc .fc-list-event:hover td {
+    @apply bg-inherit;
+  }
+
+  .fc .fc-list-event-dot {
+    @apply hidden;
+  }
+
+  .fc-direction-ltr .fc-list-day-text,
+  .fc-direction-rtl .fc-list-day-side-text,
+  .fc-direction-ltr .fc-list-day-side-text,
+  .fc-direction-rtl .fc-list-day-text {
+    @apply text-base font-medium text-default-600;
+  }
+}
+
+.dash-tail-calendar {
+  .primary {
+    @apply bg-primary border-none text-primary-foreground text-center px-2 font-medium text-sm;
+  }
+
+  .secondary {
+    @apply bg-secondary border-none text-primary-foreground text-center px-2 font-medium text-sm;
+  }
+
+  .danger {
+    @apply bg-destructive border-none text-primary-foreground text-center px-2 font-medium text-sm;
+  }
+
+  .destructive {
+    @apply bg-destructive border-none text-primary-foreground text-center px-2 font-medium text-sm;
+  }
+
+  .info {
+    @apply bg-info border-none text-primary-foreground text-center px-2 font-medium text-sm;
+  }
+
+  .warning {
+    @apply bg-warning border-none text-primary-foreground text-center px-2 font-medium text-sm;
+  }
+
+  .success {
+    @apply bg-success border-none text-primary-foreground text-center px-2 font-medium text-sm;
+  }
+
+  .dark {
+    @apply bg-card-foreground border-none text-primary-foreground text-center px-2 font-medium text-sm;
+  }
+
+}
+
+// datae picker
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day.selected:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover,
+.flatpickr-day.selected.prevMonthDay,
+.flatpickr-day.startRange.prevMonthDay,
+.flatpickr-day.endRange.prevMonthDay,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay {
+  @apply bg-primary border-primary;
+}

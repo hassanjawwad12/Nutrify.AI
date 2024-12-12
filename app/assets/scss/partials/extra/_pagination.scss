@@ -1,0 +1,117 @@
+// default pagination
+.paginate_wrapper {
+  @apply flex items-center space-x-2 rtl:space-x-reverse;
+}
+
+.paginate_wrapper li button {
+  @apply bg-muted text-muted-foreground rounded-[6px] inline-flex items-center justify-center;
+}
+
+// disabled pagination
+
+.disabled_paginate li button {
+  @apply text-muted-foreground/50 bg-muted;
+}
+
+// sizes
+
+.paginate_sm_size li button {
+  @apply text-xs font-medium h-8 w-8 rounded-[6px];
+}
+
+.paginate_md_size li button {
+  @apply text-sm font-medium h-9 w-9 px-2;
+}
+
+.paginate_lg_size li button {
+  @apply text-base font-medium h-10 w-10;
+}
+
+//  colors
+
+.paginate_primary_color .active {
+  @apply bg-primary text-primary-foreground;
+}
+
+.paginate_warning_color .active {
+  @apply bg-warning text-primary-foreground;
+}
+
+.paginate_dark_color .active {
+  @apply bg-black/90 text-primary-foreground;
+}
+.disabled_paginate .active {
+  @apply bg-primary/50 text-primary-foreground;
+}
+
+.paginate_success_color .active {
+  @apply bg-success text-primary-foreground;
+}
+
+.paginate_info_color .active {
+  @apply bg-info text-primary-foreground;
+}
+
+.paginate_destructive_color .active {
+  @apply bg-destructive text-primary-foreground;
+}
+
+// with controlled
+
+.paginate_text_btn {
+  @apply text-2xl min-w-[70px];
+}
+
+.paginate_text_btn span {
+  @apply mx-1;
+}
+// rounded pagination
+.paginate_rounded_sm li button {
+  @apply rounded-sm;
+}
+
+.paginate_rounded_md li button {
+  @apply rounded-xl;
+}
+
+.paginate_rounded_full li button {
+  @apply rounded-full;
+}
+// compact pagination
+
+.paginate_compact {
+  @apply bg-muted inline-flex items-center rounded-[6px] space-x-0;
+}
+
+.paginate_compact li button {
+  @apply border-r border-border;
+}
+
+// with shadow
+
+.paginate_shadow li button.active {
+  box-shadow: 0px 4px 8px 0px rgba(6, 182, 212, 0.18);
+}
+
+// paginate custom items
+.paginate_custom_items li button {
+  @apply border-none bg-transparent;
+}
+// paginate custom implementation
+
+.paginate_custom_implementation li button {
+  @apply h-5 w-5 rounded-full;
+}
+// style pagination
+
+.paginate_bordered li button {
+  @apply border border-default-400 dark:border-default-600;
+}
+
+.paginate_transparent_bordered li button {
+  @apply border border-default-300 dark:border-default-700 bg-transparent;
+}
+
+.paginate_transparent_no_bordered li button {
+  @apply bg-transparent;
+}

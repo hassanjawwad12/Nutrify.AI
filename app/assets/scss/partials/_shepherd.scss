@@ -1,0 +1,111 @@
+.dash-tail-app {
+  .shepherd-button {
+    @apply bg-success;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.5s ease;
+    &.btn-light {
+      @apply bg-secondary text-secondary-foreground hover:text-card-foreground hover:bg-secondary/90;
+    }
+  }
+  .shepherd-button:not(:disabled):hover {
+    @apply bg-success/80;
+  }
+  .shepherd-button.shepherd-button-secondary {
+    background: #f1f2f3;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  .shepherd-button.shepherd-button-secondary:not(:disabled):hover {
+    background: #d6d9db;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  .shepherd-button:disabled {
+    cursor: not-allowed;
+  }
+
+  // tour css
+  .shepherd-element {
+    @apply bg-card shadow-sm mt-[10px] pb-5;
+  }
+
+  // .shepherd-element.shepherd-has-title[data-popper-placement^="bottom"]
+  //   > .shepherd-arrow:before {
+  //   @apply bg-slate-600;
+  // }
+
+
+  .shepherd-has-cancel-icon.shepherd-has-title[data-popper-placement^="right"].shepherd-element.shadow-md.bg-purple-dark.shepherd-enabled {
+    margin-left: 15px;
+  }
+ 
+  .shepherd-arrow:before {
+    @apply bg-card;
+    content: "";
+    transform: rotate(45deg);
+  }
+  .shepherd-element.shepherd-has-title[data-popper-placement^="bottom"]
+    > .shepherd-arrow {
+    top: -6px;
+  }
+  .shepherd-element.shepherd-has-title[data-popper-placement^="bottom"]
+    > .shepherd-arrow:before {
+    @apply bg-card;
+    top: -1px;
+    content: "";
+    font-size: 24px;
+    transform: rotate(45deg);
+    z-index: 99;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 20%;
+  }
+  .shepherd-has-title {
+    .shepherd-content {
+      .shepherd-header {
+        @apply bg-accent;
+        padding: 0.5rem 0.75rem;
+      }
+
+      .shepherd-cancel-icon {
+        @apply text-muted-foreground;
+      }
+    }
+  }
+  .shepherd-title {
+    @apply text-base text-foreground font-medium;
+  }
+
+  .shepherd-text {
+    @apply text-sm  text-muted-foreground;
+  }
+
+  .shepherd-button {
+    &.btn-success:not(:disabled):hover {
+      @apply bg-success/80 text-primary-foreground;
+    }
+    &.btn-warning{
+      @apply bg-warning text-primary-foreground;
+    }
+    &.btn-warning:not(:disabled):hover {
+      @apply bg-warning/80 text-primary-foreground;
+    }
+
+    &.btn-light:not(:disabled):hover {
+      @apply bg-secondary;
+    }
+
+    &.btn-primary:not(:disabled):hover {
+      @apply bg-primary;
+    }
+  }
+  .shepherd-footer {
+    padding: 0 0.75rem 0.75rem;
+  }
+  .shepherd-button {
+    margin-right: 0.5rem;
+  }
+}

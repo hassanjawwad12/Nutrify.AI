@@ -1,0 +1,46 @@
+.dashtail-codeVmapPrimary path {
+  @apply fill-primary;
+
+  .svg-map__location[aria-checked="true"] {
+    @apply fill-primary;
+  }
+}
+.dashtail-codeVmapWhite path {
+  @apply fill-default-200 dark:fill-slate-500;
+
+  .svg-map__location[aria-checked="true"] {
+    @apply fill-default-500 dark:fill-slate-200;
+  }
+}
+
+.dashtail-codeVmapInfo path {
+  @apply fill-info;
+
+  .svg-map__location[aria-checked="true"] {
+    @apply fill-info;
+  }
+}
+
+.dashtail-codeVmapWarning path {
+  @apply fill-warning;
+
+  .svg-map__location[aria-checked="true"] {
+    @apply fill-warning;
+  }
+}
+
+.dashtail-codeVmapSuccess path {
+  @apply fill-success;
+
+  .svg-map__location[aria-checked="true"] {
+    @apply fill-success;
+  }
+}
+
+.dashtail-codevmap path {
+  @apply fill-primary;
+
+  .svg-map__location[aria-checked="true"] {
+    @apply fill-primary;
+  }
+}

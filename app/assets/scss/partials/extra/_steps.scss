@@ -1,0 +1,156 @@
+// steps common
+
+.steps {
+  @apply flex items-baseline;
+}
+// step direction
+.step-horizontal {
+  @apply flex items-center;
+}
+
+.step {
+  @apply flex flex-col flex-1;
+}
+
+.step-line {
+  @apply h-1 grow rounded-sm;
+}
+.stepline-border {
+  @apply h-[2px] bg-muted;
+}
+
+// steps size
+
+.step-sm {
+  @apply w-5 h-5;
+}
+
+.step-md {
+  @apply h-8 w-8 text-xs font-medium;
+}
+
+.step-lg {
+  @apply h-9 w-9 text-sm font-medium;
+}
+
+.step-xl {
+  @apply h-10 w-10 text-base font-medium;
+}
+
+/*
+
+circle color + line color
+
+*/
+.step-default-color {
+  @apply bg-muted text-default-600;
+}
+
+.step-primary-color {
+  @apply bg-primary text-primary-foreground;
+}
+
+.step-dark-color {
+  @apply bg-default-950 dark:bg-default-800 text-primary-foreground;
+}
+
+.step-destructive-color {
+  @apply bg-destructive text-primary-foreground;
+}
+
+.step-info-color {
+  @apply bg-info text-primary-foreground;
+}
+
+.step-warning-color {
+  @apply bg-warning text-primary-foreground;
+}
+
+.step-success-color {
+  @apply bg-success text-primary-foreground;
+}
+
+.step-line-default-color {
+  @apply bg-muted;
+}
+
+.step-line-primary-color {
+  @apply bg-primary;
+}
+
+.step-line-dark-color {
+  @apply bg-default-950 dark:bg-default-800;
+}
+
+.step-line-destructive-color {
+  @apply bg-destructive;
+}
+
+.step-line-info-color {
+  @apply bg-info;
+}
+
+.step-line-warning-color {
+  @apply bg-warning;
+}
+
+.step-line-success-color {
+  @apply bg-success;
+}
+
+// steps with line
+.steps-with-linespace {
+  @apply space-x-2 rtl:space-x-reverse;
+}
+
+.step-line-space {
+  @apply space-x-2 rtl:space-x-reverse;
+}
+
+.steps-with-linespace .step {
+  @apply overflow-hidden;
+}
+
+.steps-with-linespace .step-line {
+  @apply left-11;
+}
+// vertical steps
+.steps-vertical {
+  @apply flex-col;
+}
+
+.steps-vertical .step {
+  @apply flex-row space-x-5 min-h-[80px];
+}
+
+.step-vertical {
+  @apply flex flex-col items-center;
+}
+
+.step-vertical .step-line {
+  @apply w-1 h-full;
+}
+
+.vertical-steps li {
+  @apply min-h-[72px];
+}
+
+// vertical steps with line space
+.veticalsteps-line-space {
+  @apply space-y-1;
+}
+
+.veticalsteps-line-space .step-vertical {
+  @apply space-y-1;
+}
+// steps with action
+.steps-with-action {
+  @apply flex space-x-2 rtl:space-x-reverse;
+}
+
+.step-hr-content {
+  @apply flex space-x-2 rtl:space-x-reverse;
+}
+.step-vr-content {
+  @apply flex flex-col items-center gap-4;
+}

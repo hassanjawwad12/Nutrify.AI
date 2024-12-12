@@ -1,0 +1,60 @@
+.dash-tail-app .react-select {
+  .react-select.is-invalid {
+    .select__control {
+      border-color: none !important;
+    }
+  }
+  .select__control {
+    @apply bg-background h-8 border border-default-200 focus:border-primary;
+  }
+  .select__single-value{
+    @apply text-sm font-medium text-default-800;
+  }
+  .select__menu {
+    @apply bg-background;
+  }
+ .select__placeholder {
+    @apply text-default-500;
+ }
+  .select__menu .select__option{
+    @apply hover:bg-primary/10;
+     &.select__option--is-selected {
+      @apply bg-primary;
+     }
+  }
+   &.is-invalid .select__control {
+    border-color: none !important;
+  }
+    .has-error .select__control {
+    @apply border-destructive
+  }
+ .react-select__control .select__input {
+    @apply text-default-500;
+  }
+   .react-select__control.select__control--is-disabled {
+    @apply cursor-not-allowed;
+  }
+    .react-select__control .select__indicator-separator {
+    @apply bg-default-50 text-default-800 placeholder:text-opacity-60;
+  }
+    .react-select__control .select__indicator svg {
+    @apply cursor-pointer text-default-600;
+  }
+    .has-error .react-select__control .select__indicator svg {
+    @apply text-destructive-700;
+  }
+
+  .select__multi-value__label{
+    @apply text-xs bg-primary text-primary-foreground rounded-none ltr:rounded-l rtl:rounded-r;
+  }
+  .select__multi-value__remove{
+    @apply bg-primary rounded-none ltr:rounded-r rtl:rounded-l;
+    svg{
+      @apply fill-primary-foreground; 
+    }
+  }
+
+}
+ html[dir=rtl] .react-select .select__loading-indicator {
+    flex-direction: row-reverse;
+  }

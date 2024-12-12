@@ -1,0 +1,193 @@
+.tm-wrapper li {
+  @apply relative pb-10;
+}
+
+.tm-wrapper li:last-child .tm-separator .tm-connector {
+  @apply hidden;
+}
+
+.tm-separator {
+  @apply absolute h-full top-[3px] left-0 rtl:right-0 flex flex-col items-center;
+}
+.tm-content-wrapper {
+  @apply pl-8 lg:pl-10;
+}
+// dot
+.tm-dot {
+  @apply h-4 w-4 bg-default-200 dark:bg-default-400 rounded-full;
+}
+
+.tm-dot.tm-dot-outline {
+  @apply bg-transparent;
+}
+
+.tm-dot-primary {
+  @apply bg-primary border-2 border-primary;
+}
+
+.tm-dot-info {
+  @apply bg-info border-2 border-info;
+}
+
+.tm-dot-warning {
+  @apply bg-warning border-2 border-warning;
+}
+
+.tm-dot-success {
+  @apply bg-success border-2 border-success;
+}
+
+.tm-dot-destructive {
+  @apply bg-destructive border-2 border-destructive;
+}
+
+.tm-connector {
+  @apply grow w-[2px] bg-default-200 dark:bg-default-400;
+}
+
+// timeline with line space
+.tm-line-space {
+  @apply space-y-2;
+}
+
+.tm-line-space .tm-separator {
+  @apply space-y-2;
+}
+
+// Timeline With Ping
+.tm-dot-ping {
+  @apply relative before:absolute before:top-0 before:left-0 before:inline-flex before:h-full before:w-full before:animate-ping before:rounded-full before:opacity-80;
+}
+
+
+.tm-card-bg-default {
+  @apply bg-default-100 dark:bg-default-800 before:border-r-default-100 dark:before:border-r-default-800;
+}
+
+.tm-card-bg-primary {
+  @apply bg-primary/10 before:border-r-primary/10 dark:before:border-r-primary/10;
+}
+
+.tm-card-bg-info {
+  @apply bg-info/20 before:border-r-info/20 dark:before:border-r-info/20;
+}
+
+.tm-card-bg-destructive {
+  @apply bg-destructive/20 before:border-r-destructive/20 dark:before:border-r-destructive/20;
+}
+
+.tm-card-bg-warning {
+  @apply bg-warning/20 before:border-r-warning/20 dark:before:border-r-warning/20;
+}
+
+.tm-card-bg-success {
+  @apply bg-success/20 before:border-r-success/20 dark:before:border-r-success/20;
+}
+// timeline left positioned
+.tm-wrapper.tm-left .tm-content-wrapper {
+  @apply md:pl-0;
+}
+
+.tm-wrapper.tm-left .tm-content-wrapper .tm-content {
+  @apply md:text-right;
+}
+
+.tm-wrapper.tm-left li {
+  @apply md:pr-5;
+}
+
+.tm-wrapper.tm-left .tm-separator {
+  @apply md:left-[unset] md:-right-4;
+}
+
+// alternate timeline
+
+.tm-wrapper.tm-alternate li {
+  @apply md:w-1/2;
+}
+
+.tm-alternate li:nth-child(odd) {
+  @apply md:ml-auto;
+}
+
+.tm-alternate li:nth-child(even) .tm-separator {
+  @apply md:left-[unset] md:-right-[17px];
+}
+
+.tm-wrapper.tm-alternate li:nth-child(even) .tm-content-wrapper {
+  @apply md:text-right md:pr-5;
+}
+
+// reverse alternate timeline
+
+.tm-wrapper.tm-alternate-reverse .tm-content-wrapper {
+  @apply md:pl-0;
+}
+
+.tm-wrapper.tm-alternate-reverse li:nth-child(odd) .tm-content-wrapper {
+  @apply md:text-right md:pr-5;
+}
+
+.tm-wrapper.tm-alternate-reverse li:nth-child(even) .tm-content-wrapper {
+  @apply md:pl-10;
+}
+
+.tm-wrapper.tm-alternate-reverse li {
+  @apply md:w-1/2;
+}
+
+.tm-alternate-reverse li:nth-child(even) {
+  @apply md:ml-auto;
+}
+
+.tm-wrapper.tm-alternate-reverse li:nth-child(odd) .tm-separator {
+  @apply md:left-[unset] md:-right-[17px];
+}
+// timeline opposite content
+
+.tm-wrapper.tm-opposite-content .tm-content-wrapper {
+  @apply md:grid md:grid-cols-2 md:gap-16;
+}
+
+.tm-wrapper.tm-opposite-content
+  li:nth-child(odd)
+  .tm-content-wrapper
+  .tm-content {
+  @apply md:order-1 md:items-start;
+}
+
+.tm-wrapper.tm-opposite-content
+  li:nth-child(odd)
+  .tm-content-wrapper
+  .tm-opposite-content {
+  @apply md:text-right md:pr-5;
+}
+
+.tm-wrapper.tm-opposite-content .tm-content-wrapper .tm-content {
+  @apply md:flex md:flex-col md:items-end md:pr-5;
+}
+
+.tm-wrapper.tm-opposite-content .tm-separator {
+  @apply md:left-1/2;
+}
+// timeline with dot icon
+.tm-with-doticon .tm-dot {
+  @apply bg-transparent border-0 flex justify-center items-center;
+}
+// timeline with card
+
+.tm-wrapper.tm-with-card .tm-content {
+  @apply p-4 rounded-sm relative before:absolute before:top-2 before:-left-2 before:border-solid before:border-r-8 before:border-y-transparent before:border-y-8 before:border-l-0;
+}
+
+.tm-wrapper.tm-with-card.tm-left .tm-content {
+  @apply md:before:rotate-180 md:before:left-[unset] md:before:-right-2;
+}
+
+.tm-wrapper.tm-with-card.tm-alternate li:nth-child(even) .tm-content {
+  @apply md:before:rotate-180 md:before:left-[unset] md:before:-right-2;
+}
+
+.tm-wrapper.tm-with-card.tm-alternate-reverse li:nth-child(odd) .tm-content {
+  @apply md:before:rotate-180 md:before:left-[unset] md:before:-right-2;
+}

@@ -1,0 +1,89 @@
+ /* Custom Scrollbar Styles */
+ ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+     /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+    border-radius: 8px; /* Rounded corners for the track */
+    width: 0.5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #88c0d0; /* Light blue color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the thumb on hover */
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-radius {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    align-items: center;
+  }
+   
+  .logo-container {
+    
+    transform: translate(-50%, -50%);
+  }
+   
+  .logo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+  }
+   
+  .circles {
+    height: 35vmin;
+    position: relative;
+    width: 35vmin;
+   
+    > div {
+      animation: growAndFade 3s infinite ease-out;
+      background-color: #7398FC;
+      border-radius: 50%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+    }
+   
+    .circle1 {
+      animation-delay: 0s;    
+    }
+    .circle2 {
+      animation-delay: 1s;
+    }
+    .circle3 {
+      animation-delay: 2s;
+    }
+  }
+   
+  @keyframes growAndFade {
+    0% {
+      opacity: .25;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
