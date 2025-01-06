@@ -1,0 +1,24 @@
+<svg  viewBox="0 0 112 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 4C0 1.79086 1.79086 0 4 0H9V72H4C1.79086 72 0 70.2091 0 68V4Z" />
+<path d="M11 0H28V72H11V0Z" />
+<rect x="32" y="4" width="75" height="8" rx="1" />
+<rect x="32" y="16" width="24" height="17" rx="1" />
+<rect x="59" y="16" width="48" height="17" rx="1" />
+<rect x="32" y="37" width="75" height="23" rx="1" />
+<rect x="32" y="64" width="75" height="4" rx="1" />
+<rect x="3" y="6" width="4" height="4" rx="2" />
+<rect x="13" y="6" width="13" height="3" rx="1.5" />
+<rect x="3" y="18" width="4" height="4" rx="2" />
+<rect x="13" y="12" width="13" height="3" rx="1.5" />
+<rect x="3" y="26" width="4" height="4" rx="2" />
+<rect x="13" y="18" width="13" height="3" rx="1.5" />
+<rect x="3" y="34" width="4" height="4" rx="2" />
+<rect x="13" y="24" width="13" height="3" rx="1.5" />
+<rect x="3" y="42" width="4" height="4" rx="2" />
+<rect x="13" y="30" width="13" height="3" rx="1.5" />
+<circle cx="38" cy="8" r="2" />
+<circle cx="89" cy="8" r="2" />
+<circle cx="95" cy="8" r="2" />
+<circle cx="101" cy="8" r="2" />
+
+</svg>
